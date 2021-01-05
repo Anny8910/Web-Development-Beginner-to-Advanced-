@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box shadow and text shadow</title>
+</head>
+<style>
+.container{
+    display: flex;
+}
+.card{
+    padding: 23px 12px;
+    margin: 23px 12px;
+    background-color: burlywood;
+    /* box-shadow: offset-x offset-y color; */
+    /* box-shadow: offset-x offset-y blur-radius color; */
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+     box-shadow: inset -10px -13px 10px green;
+    /* box-shadow: -10px -13px green; */
+    /* box-shadow: 7px 5px 10px green;
+    box-shadow: -7px -5px 10px green; */
+    /* box-shadow: -7px -5px 10px 34px green; */
+    /* box-shadow: -7px -5px 10px 34px rgba(71, 172, 172, 0.5); */
+    /*box-shadow: inset 3px 5px green;*/
+
+    box-shadow: 8px 9px green, 14px 16px red, 23px 25px yellow;
+   
+}
+.card h2{
+     text-shadow: 3px 4px whitesmoke;
+     text-shadow: 3px 2px 2px white; 
+    /*text-shadow: -3px -2px 2px white;*/
+}
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+           <h2>Course 1</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ut non sed alias dolorum dolores eligendi distinctio harum quis maxime ducimus quas reprehenderit atque animi illo, ullam veniam. Fugit, doloribus!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Course 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat doloribus molestiae velit ipsum, aliquam officia ratione excepturi in officiis, incidunt quo est pariatur tempore ex, distinctio nostrum! Sint non doloribus rem obcaecati sunt.</p>
+        </div>
+        <div class="card" id="card-3">
+           <h2>Course 3</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tenetur molestiae, placeat quas perferendis quibusdam atque omnis distinctio obcaecati dolor, tempora unde deserunt iure nam. Iste labore eveniet esse deserunt?</p>
+        </div>
+    </div>
+</body>
+</html>

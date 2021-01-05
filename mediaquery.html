@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color:black;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display:none;
+            
+        }
+        /*Media queries are used when we want to customize our website's presentation according to the user's screen size. 
+        With the help of media queries, you can display different markups based upon the device's general type(mobile, desktop, tablet).*/
+
+        /*@media media-type and (media-feature)
+        {
+             CSS Rules to be applies
+        }*/
+
+        /*There are lot of media types- screen, print etc. 
+        If we want to choose only one media type and don't want other media type being involved in this 
+        we'll add "only" before the media type*/
+
+
+        @media only screen and (max-width:300px){
+            #box-1{
+                display: block;
+                background-color:red;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            #box-2{
+                display: block;
+                background-color: blue;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            #box-3{
+                display: block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 800px)  {
+            #box-4{
+                display: block;
+                background-color: green;
+            }
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">This is Android phone view</div>
+    <div class="box" id="box-2">This is Tablet view</div>
+    <div class="box" id="box-3">This is Desktop view</div>
+    <div class="box" id="box-4">This is Widescreen Computer view</div>
+</body>
+</html>
+
